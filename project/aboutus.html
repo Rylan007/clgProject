@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Law Firm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+        body {
+            font-family: "DM Serif Display", serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('jp/hu.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 60px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 23px;
+        }
+
+        .mid {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 32px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: azure;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .Search {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            padding: 4px 10px;
+            width: 180px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            font-size: 20px;
+
+
+
+        }
+
+        .btn {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(54, 47, 47);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 320px;
+            padding: 75px;
+            width: 50%;
+            border-radius: 28px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        .team-member p {
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="jp/img.png" alt="">
+            <div>Advocate Dabre</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="ourservices.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="right">
+            <input type="text" class="Search" name=Search id="Search" placeholder="Search">
+            <button class="btn" onclick="searchPages()">Search</button>
+        </div>
+
+        <div class="results" id="searchResults"></div>
+
+        <div class="container">
+            <h1>About Us</h1>
+
+
+            <p>Welcome to Our Law Firm. We are dedicated to offering top-notch legal services to our clients. With a
+                team of experienced attorneys, we aim to provide comprehensive and personalized legal assistance to meet
+                your needs.</p>
+
+            <h3>Our Mission</h3>
+            <p>Our mission is to deliver high-quality legal representation while maintaining the highest standards of
+                professional integrity. We are committed to understanding our clients' needs and achieving their goals
+                through effective legal solutions.</p>
+
+            <h1>Our Values</h1>
+            <ul>
+                <li><strong>Integrity:</strong> We uphold the highest ethical standards in all our dealings.</li>
+                <li><strong>Excellence:</strong> We strive for excellence in everything we do.</li>
+                <li><strong>Commitment:</strong> We are dedicated to our clients and their legal needs.</li>
+                <li><strong>Respect:</strong> We treat our clients, colleagues, and opponents with respect and
+                    professionalism.</li>
+            </ul>
+
+            <h1>Our Team</h1>
+            <div class="team">
+                <div class="team-member">
+                    <img src="jp/hi.jpg" alt="John Doe">
+                    <h3>David Dabre</h3>
+                    <p>Senior </p>
+                    <p>David is a seasoned attorney with over 20 years of experience in corporate law.</p>
+                </div>
+                <div class="team-member">
+                    <img src="jp/hik.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Partner</p>
+                    <p>Jane specializes in family law and has a track record of successful cases.</p>
+
+                    <div class="team-member">
+                        <img src="jp/hik.jpg" alt="atharva thakur">
+                        <h3>Atharva thakur</h3>
+                        <p>Associate</p>
+                        <p>Atharva focuses on criminal defense and is known for his tenacious representation.</p>
+                    </div>
+                </div>
+            </div>
+            <script src="js/search.js"></script>
+
+</body>
+
+</html>

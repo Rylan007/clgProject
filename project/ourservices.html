@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Law Firm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+        body {
+            font-family: "DM Serif Display", serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('jp/hu.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 60px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 23px;
+        }
+
+        .mid {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            right: 32px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: azure;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .Search {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            padding: 4px 10px;
+            border-radius: 10px;
+            width: 180px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            font-size: 20px;
+
+
+
+        }
+
+        .btn {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(54, 47, 47);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 320px;
+            padding: 75px;
+            width: 50%;
+            border-radius: 28px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .services {
+            margin-top: 50px;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .services li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="jp/img.png" alt="Law Firm Logo">
+            <div>Advocate Dabre</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourservices.html" class="active">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input type="text" class="Search" name=Search id="Search" placeholder="Search">
+            <button class="btn" onclick="searchPages()">Search</button>
+        </div>
+
+        <div class="results" id="searchResults"></div>
+    </header>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>We offer a comprehensive range of legal services to cater to the diverse needs of our clients. Our
+            experienced attorneys are dedicated to providing expert legal advice and representation in the following
+            areas:</p>
+
+        <h2>Corporate Law</h2>
+        <p>We assist businesses with all aspects of corporate law, including formation, governance, compliance, mergers
+            and acquisitions, and more.</p>
+
+        <h2>Family Law</h2>
+        <p>Our family law practice covers divorce, child custody, alimony, adoption, and other related matters, ensuring
+            sensitive and effective legal support.</p>
+
+        <h2>Criminal Defense</h2>
+        <p>We provide robust defense representation for clients facing criminal charges, protecting their rights and
+            striving for the best possible outcomes.</p>
+
+        <h2>Personal Injury</h2>
+        <p>Our personal injury lawyers help clients obtain compensation for injuries sustained due to accidents,
+            negligence, or wrongful actions of others.</p>
+
+        <h2>Estate Planning</h2>
+        <p>We offer comprehensive estate planning services, including wills, trusts, probate, and estate administration
+            to secure your legacy and protect your assets.</p>
+    </div>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>

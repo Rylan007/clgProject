@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm - Home</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+    body {
+        font-family: "DM Serif Display", serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: url('jp/gg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="jp/img.png" alt="">
+            <div>Advocate Dabre</div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="ourservices.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <input type="text" class="Search" name=Search id="Search" placeholder="Search">
+            <button class="btn" onclick="searchPages()">Search</button>
+        </div>
+
+        <div class="results" id="searchResults"></div>
+
+
+
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p>
+            <h2>Welcome to Our Law Firm. We are dedicated to offering top-notch legal services to our clients. With a
+                team of experienced attorneys, we aim to provide comprehensive and personalized legal assistance to meet
+                your needs.</h2>
+            </p>
+            <p>
+            <h2>Our mission is to deliver high-quality legal representation while maintaining the highest standards of
+                professional integrity. We understand the complexities of the legal system and strive to guide our
+                clients through every step of their legal journey.</h2>
+            </p>
+        </div>
+
+        <div class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Corporate Law</li>
+                <li>Family Law</li>
+                <li>Criminal Defense</li>
+                <li>Personal Injury</li>
+                <li>Estate Planning</li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <a href="aboutus.html" class="btn" onclick="navigateWithFadeOut('aboutus.html')">Learn More About Us</a>
+            <a href="ourservices.html" class="btn" onclick="navigateWithFadeOut('ourservices.html')">Explore Our
+                Services</a>
+            <a href="contactus.html" class="btn" onclick="navigateWithFadeOut('contactus.html')">Get in Touch</a>
+        </div>
+    </div>
+    </div>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

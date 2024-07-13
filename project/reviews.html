@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Law Firm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+        body {
+            font-family: "DM Serif Display", serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('jp/hu.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 60px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 23px;
+        }
+
+        .mid {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            right: 32px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: azure;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .Search {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            padding: 4px 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            width: 180px;
+            border: 2px solid gray;
+            font-size: 20px;
+
+
+
+        }
+
+        .btn {
+            margin: 0 10px;
+            font-family: "DM Serif Display", serif;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(54, 47, 47);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 320px;
+            padding: 75px;
+            width: 50%;
+            border-radius: 28px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .review {
+            margin-bottom: 30px;
+        }
+
+        .review h3 {
+            margin: 10px 0;
+        }
+
+        .review p {
+            color: #ddd;
+        }
+
+        .review span {
+            font-size: 0.9em;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="jp/img.png" alt="Law Firm Logo">
+            <div>Advocate Dabre</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourservices.html">Services</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input type="text" class="Search" name=Search id="Search" placeholder="Search">
+            <button class="btn" onclick="searchPages()">Search</button>
+        </div>
+
+        <div class="results" id="searchResults"></div>
+    </header>
+
+    <div class="container">
+        <h2>Client Reviews</h2>
+        <div class="review">
+            <h3>John Doe</h3>
+            <p>"Advocate Dabre provided exceptional legal services. Their attention to detail and dedication to my case
+                was impressive. Highly recommend!"</p>
+            <span>★★★★★</span>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p>"The team at Advocate Dabre's firm is outstanding. They handled my case with professionalism and care. I
+                couldn't have asked for better representation."</p>
+            <span>★★★★★</span>
+        </div>
+        <div class="review">
+            <h3>Alex Johnson</h3>
+            <p>"From start to finish, Advocate Dabre and his team were amazing. They kept me informed every step of the
+                way and achieved a great result for me."</p>
+            <span>★★★★★</span>
+        </div>
+        <div class="review">
+            <h3>Maria Rodriguez</h3>
+            <p>"Excellent service and highly skilled attorneys. I felt confident and well-represented throughout my
+                entire legal process. Thank you!"</p>
+            <span>★★★★★</span>
+        </div>
+    </div>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
